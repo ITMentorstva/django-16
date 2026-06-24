@@ -1,9 +1,9 @@
 
-POST http://127.0.0.1:8000/api/item
+POST http://127.0.0.1:8000/api/items/
 Content-Type: application/json
 
 {
-  "name": "Toma item",
+  "name": "Toma item wqdqwwqdqdq",
   "description": "Lorem Ipsum",
-  "price": 89.99
+  "price": -599
 }

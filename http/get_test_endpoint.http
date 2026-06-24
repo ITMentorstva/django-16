@@ -1,5 +1,30 @@
 ### GET request to example server
-GET http://127.0.0.1:8000/api/item
+GET http://127.0.0.1:8000/api/items/?price=50
 
 ###
-GET http://127.0.0.1:8000/api/item/1
+GET http://127.0.0.1:8000/api/items/3
+
+###
+GET http://127.0.0.1:8000/api/items/cheapest
+
+###
+PATCH http://127.0.0.1:8000/api/items/3/
+Content-Type: application/json
+
+{
+  "price": 20.5
+}
+
+###
+PUT http://127.0.0.1:8000/api/items/3/
+Content-Type: application/json
+
+{
+  "price": 20.5,
+  "description": "wqdqwdqwdqwd",
+  "name": "wqdqwdqw"
+}
+
+###
+DELETE http://127.0.0.1:8000/api/items/7/
+Accept: application/json
